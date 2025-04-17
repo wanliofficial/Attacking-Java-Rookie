@@ -1,6 +1,6 @@
 # 介绍
 
-　　这是一本java程序员写的必备知识积累之书。可以说是一本进击之书。命名为《进击的java菜鸟》。
+这是一本java程序员写的必备知识积累之书。可以说是一本进击之书。命名为《进击的java菜鸟》。
 
 本书地址[https://fhfirehuo.github.io/Attacking-Java-Rookie/](https://fhfirehuo.github.io/Attacking-Java-Rookie/)
 
@@ -25,24 +25,23 @@
 
 ## 目录
 
-* 第一章   [心得篇](Chapter01/experience.md)
-* 第二章   [数据结构篇](Chapter02/DataStructure.md)
-* 第三章   [算法篇](Chapter03/algorithm.md)
-* 第四章   [设计模式](Chapter04/designPatterns.md)
-* 第五章   [JAVA篇](Chapter05/java.md)
-* 第六章   [JVM篇](Chapter06/jvm.md)
-* 第七章   [并发篇](Chapter07/concurrent.md)
-* 第八章   [中间件篇](Chapter08/plugin.md)
-* 第九章   [数据库篇](Chapter09/db.md)
-* 第十章   [网络篇](Chapter10/net.md)
-* 第十一章 [SPRING篇](Chapter11/spring.md)
-* 第十二章 [CLOUD篇](Chapter12/cloud.md)
-* 第十三章 [架构篇](Chapter13/architecture.md)
-* 第十四章 [权限篇](Chapter14/permission.md) 
-* 第十五章 [登录篇](Chapter15/longin.md)
-* 第十六章 [系统篇](Chapter16/system.md)
-* 第十七章 [netty篇](Chapter17/netty.md)
-* 第十八章 [计算机原理篇](Chapter18/computer.md)
-* [附录](Chapter20/appendix.md)
-
+* 第一章   [心得篇](docs/Chapter01/experience.md)
+* 第二章   [数据结构篇](docs/Chapter02/DataStructure.md)
+* 第三章   [算法篇](docs/Chapter03/algorithm.md)
+* 第四章   [设计模式](docs/Chapter04/designPatterns.md)
+* 第五章   [JAVA篇](docs/Chapter05/java.md)
+* 第六章   [JVM篇](docs/Chapter06/jvm.md)
+* 第七章   [并发篇](docs/Chapter07/concurrent.md)
+* 第八章   [中间件篇](docs/Chapter08/plugin.md)
+* 第九章   [数据库篇](docs/Chapter09/db.md)
+* 第十章   [网络篇](docs/Chapter10/net.md)
+* 第十一章 [SPRING篇](docs/Chapter11/spring.md)
+* 第十二章 [CLOUD篇](docs/Chapter12/cloud.md)
+* 第十三章 [架构篇](docs/Chapter13/architecture.md)
+* 第十四章 [权限篇](docs/Chapter14/permission.md) 
+* 第十五章 [登录篇](docs/Chapter15/longin.md)
+* 第十六章 [系统篇](docs/Chapter16/system.md)
+* 第十七章 [netty篇](docs/Chapter17/netty.md)
+* 第十八章 [计算机原理篇](docs/Chapter18/computer.md)
+* [附录](docs/Chapter20/appendix.md)
 
