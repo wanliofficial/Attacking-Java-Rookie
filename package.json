@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "gitbook build ./content ./docs"
+    "build": "gitbook build ./ ./_book"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/FHfirehuo/Attacking-Java-Rookie#readme",
   "dependencies": {
-    "code": "^5.2.4"
+    "Attacking-Java-Rookie": "file:",
+    "code": "^5.2.4",
+    "gitbook-cli": "^2.3.2",
+    "graceful-fs": "^4.2.11"
   }
 }

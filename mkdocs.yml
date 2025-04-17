@@ -1,0 +1,12 @@
+site_name: 进击的java菜鸟
+
+plugins:
+  - search
+  - pdf-export:
+      enabled: true
+      combined: true  # 是否将所有页面合并为一个 PDF 文件
+      verbose: true   # 是否显示详细的日志信息
+      output_path: "java.pdf"  # 输出文件名
+
+theme:
+  name: material
