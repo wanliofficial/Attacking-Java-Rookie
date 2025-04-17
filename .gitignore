@@ -2,6 +2,7 @@ HELP.md
 
 ./_book
 ./content
+./site
 
 ./_book/*
 ./content/*
