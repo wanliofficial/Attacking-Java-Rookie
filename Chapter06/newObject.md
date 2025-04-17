@@ -21,15 +21,15 @@
 Klass Word 这里其实是虚拟机设计的一个oop-klass model模型，这里的OOP是指Ordinary Object Pointer（普通对象指针），看起来像个指针实际上是藏在指针里的对象。
 而 klass 则包含 元数据和方法信息，用来描述 Java 类。它在64位虚拟机开启压缩指针的环境下占用 32bits 空间。
 
-####Mark Word
+#### Mark Word
 
 Mark Word 是我们分析的重点，这里也会设计到锁的相关知识。Mark Word 在64位虚拟机环境下占用 64bits 空间。整个Mark Word的分配有几种情况：
 
 1. 未锁定（Normal）： 哈希码（identity_hashcode）占用31bits，分代年龄（age）占用4 bits，偏向模式（biased_lock）占用1 bits，锁标记（lock）占用2 bits，剩余26bits 未使用(也就是全为0)
-1. 可偏向（Biased）： 线程id 占54bits，epoch 占2 bits，分代年龄（age）占用4 bits，偏向模式（biased_lock）占用1 bits，锁标记（lock）占用2 bits，剩余 1bit 未使用。
-1. 轻量锁定（Lightweight Locked）： 锁指针占用62bits，锁标记（lock）占用2 bits。
-1. 重量级锁定（Heavyweight Locked）：锁指针占用62bits，锁标记（lock）占用2 bits。
-1. GC 标记：标记位占2bits，其余为空（也就是填充0）
+2. 可偏向（Biased）： 线程id 占54bits，epoch 占2 bits，分代年龄（age）占用4 bits，偏向模式（biased_lock）占用1 bits，锁标记（lock）占用2 bits，剩余 1bit 未使用。
+3. 轻量锁定（Lightweight Locked）： 锁指针占用62bits，锁标记（lock）占用2 bits。
+4. 重量级锁定（Heavyweight Locked）：锁指针占用62bits，锁标记（lock）占用2 bits。
+5. GC 标记：标记位占2bits，其余为空（也就是填充0）
 
 以上就是我们对Java对象头内存模型的解析，只要是Java对象，那么就肯定会包括对象头，也就是说这部分内存占用是避免不了的。所以，在笔者64位虚拟机，Jdk1.8（开启了指针压缩）的环境下，任何一个对象，啥也不做，只要声明一个类，那么它的内存占用就至少是96bits，也就是至少12字节。
 
